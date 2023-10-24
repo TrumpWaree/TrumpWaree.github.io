@@ -1,0 +1,219 @@
+body{
+    
+    margin: 0;
+    padding: 0;  
+    background-size: cover;
+    background-image: url(trump3.jpg);
+}
+
+
+
+
+
+  .box{
+    width: 650px;
+    height: 500px;
+    background-color: rgba(170, 44, 44, 0.384 50%);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Century Gothic',sans-serif;
+    box-shadow: 1px 1px 0 -0.4px #000000,
+    2px 2px 0 -0.8px #111111,
+    3px 3px 0 -1.2px #222222,
+    4px 4px 0 -1.6px #333333,
+    5px 5px 0 -2px #444444,
+    6px 6px 0 -2.4px #555555,
+    7px 7px 0 -2.8px #666666,
+    8px 8px 0 -3.2px #777777,
+    9px 9px 0 -3.6px #888888,
+    10px 10px 0 -4px #999999,
+    11px 11px 0 -4.4px #aaaaaa,
+    12px 12px 0 -4.8px #bbbbbb,
+    13px 13px 0 -5.2px #cccccc,
+    14px 14px 0 -5.6px #dddddd,
+    15px 15px 0 -6px #eeeeee;
+  }
+
+
+.box h2{
+  font-weight: 100;
+  margin-top: 40%;
+  letter-spacing: 0px;
+}
+
+  .box h1{
+    font-size: 50px;
+    letter-spacing: 0px;
+    font-weight: 100;
+    margin-top: 0%;
+    color: #ff7300;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(226, 212, 12), 0 0 5px rgb(250, 246, 1);
+  }
+ 
+  .box h4{
+
+    color: #492de9
+  }
+
+
+  @import url("https://fonts.googleapis.com/css?family=Raleway:300");
+*{
+  margin: 20px;
+  padding: 10px;
+}
+
+button{
+  position: relative;
+  height: 60px;
+  width: 200px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #111;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 0 0 10px 5px #48abe0,
+            0 0 20px 7px #ebecca,
+            0 0 25px 7px #ff1493;
+            0 0 25px 7px #ff1393;
+             
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button:before{
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  filter: blur(5px);
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  transition: opacity .3s ease-in-out;
+  animation: animate 20s linear infinite;
+}
+button:hover:before{
+  opacity: 1;
+}
+button:hover:active{
+  background: none;
+}
+button:hover:active:before{
+  filter: blur(2px);
+}
+@keyframes animate {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+button{
+  position: relative;
+  height: 60px;
+  width: 200px;
+  margin: 0 35px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+
+
+
+
+button:first-child:hover{
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+button:first-child:hover{
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+button:last-child:hover{
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+  button:last-child:hover{
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+  }
+  button:first-child:hover{
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+  }
+button:first-child:before,
+button:last-child:before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+button:first-child:hover:before,
+button:last-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+button:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+
+}
